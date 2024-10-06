@@ -1,0 +1,85 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Comic Sans MS', sans-serif; /* Fun and friendly font */
+}
+
+body {
+    background-color: #f9f5ff; /* Light background */
+    display: flex;
+    flex-direction: column; /* Stack child elements vertically */
+    height: 100vh; /* Set height to full viewport */
+}
+
+header {
+    background-color: #ffffff; /* White for the header */
+    padding: 15px 30px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 36px;
+    color: #444; /* Dark text for visibility */
+}
+
+nav {
+    background-color: #ffffff; /* White background for the navbar */
+    padding: 10px 20px; /* Padding around navbar items */
+    text-align: center; /* Center the navbar items */
+}
+
+nav ul {
+    list-style-type: none; /* Remove default bullet points */
+    display: flex; /* Use flexbox to align items in a row */
+    flex-wrap: wrap; /* Allow items to wrap onto the next line if necessary */
+    justify-content: center; /* Center items */
+    gap: 15px; /* Add space between items */
+}
+
+nav ul li {
+    margin: 0; /* Remove margin on list items */
+}
+
+nav a {
+    text-decoration: none; /* Remove underline from links */
+    color: #ff6b6b; /* Soft red color for links */
+    font-weight: bold; /* Bold font for links */
+    padding: 8px 15px; /* Reduced padding for smaller buttons */
+    border: 2px solid transparent; /* Default border */
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s, color 0.3s; /* Smooth transitions */
+}
+
+nav a:hover {
+    color: white; /* Change text color on hover for better contrast */
+    background-color: #ff6b6b; /* Background color change on hover */
+    border-color: #ff6b6b; /* Border color change on hover */
+}
+
+main {
+    flex: 1; /* Allow the main section to take up available space */
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.about-container {
+    background-color: #ffffff; /* White background for about container */
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+    background-color: #ffffff; /* White background for footer */
+    color: #444; /* Dark text for visibility */
+    text-align: center;
+    padding: 20px;
+    margin-top: auto; /* Push footer to the bottom */
+}
+
+.about-image {
+    max-width: 20%; /* Ensure images are responsive */
+    height: auto; /* Maintain aspect ratio */
+    margin: 20px 0; /* Add some space above and below images */
+}

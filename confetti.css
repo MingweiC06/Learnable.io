@@ -1,0 +1,64 @@
+body {
+    overflow: hidden; /* Prevent scrolling when confetti falls */
+}
+
+.confetti {
+    position: absolute;
+    top: -10%; /* Start above the viewport */
+    pointer-events: none; /* Prevent interaction with confetti */
+    opacity: 0.8; /* Slightly transparent for a softer look */
+}
+
+@keyframes confetti-fall {
+    0% {
+        transform: translateY(0) rotate(0deg);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(100vh) rotate(720deg); /* Fall and rotate */
+        opacity: 0; /* Fade out */
+    }
+}
+
+/* Use a rectangular shape for the confetti pieces */
+.confetti-piece {
+    width: 8px; /* Adjust size */
+    height: 20px; /* Adjust size */
+    position: absolute;
+    background: linear-gradient(135deg, #ff6b6b, #ff9a9a); /* Gradient for depth */
+    border-radius: 3px; /* Slightly rounded corners */
+    animation: confetti-fall linear infinite; /* Fall animation */
+}
+
+/* Customize colors for confetti pieces */
+.confetti-piece.red {
+    background: linear-gradient(135deg, #ff6b6b, #ff9a9a);
+}
+.confetti-piece.green {
+    background: linear-gradient(135deg, #6bff6b, #a8ff9a);
+}
+.confetti-piece.blue {
+    background: linear-gradient(135deg, #6b6bff, #9ab4ff);
+}
+.confetti-piece.yellow {
+    background: linear-gradient(135deg, #ffeb3b, #fff176);
+}
+.confetti-piece.purple {
+    background: linear-gradient(135deg, #9c27b0, #d05ce3);
+}
+.confetti-piece.orange {
+    background: linear-gradient(135deg, #ff9800, #ffb74d);
+}
+
+/* Customize animation durations */
+.confetti-piece {
+    animation-duration: 4s; /* Fall duration */
+}
+
+/* Add more dynamic styles */
+@media screen and (max-width: 768px) {
+    .confetti-piece {
+        width: 6px; /* Smaller on mobile */
+        height: 15px; /* Smaller on mobile */
+    }
+}

@@ -1,0 +1,108 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Comic Sans MS', sans-serif; /* Fun and friendly font */
+}
+
+body {
+    background-color: #f9f5ff; /* Light background */
+    display: flex;
+    flex-direction: column; /* Stack child elements vertically */
+    min-height: 100vh; /* Ensure body takes at least full viewport height */
+}
+
+header {
+    background-color: #ffffff; /* White for the header */
+    padding: 15px 30px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 36px;
+    color: #444; /* Dark text for visibility */
+}
+
+nav {
+    background-color: #ffffff; /* White background for the navbar */
+    padding: 10px 20px; /* Padding around navbar items */
+    text-align: center; /* Center the navbar items */
+}
+
+nav ul {
+    list-style-type: none; /* Remove default bullet points */
+    display: flex; /* Use flexbox to align items in a row */
+    flex-wrap: wrap; /* Allow items to wrap onto the next line if necessary */
+    justify-content: center; /* Center items */
+    gap: 15px; /* Add space between items */
+}
+
+nav ul li {
+    margin: 0; /* Remove horizontal margin on list items */
+    margin-bottom: 15px; /* Increased space below each item for better vertical spacing */
+}
+
+nav a {
+    text-decoration: none; /* Remove underline from links */
+    color: #ff6b6b; /* Soft red color for links */
+    font-weight: bold; /* Bold font for links */
+    padding: 8px 15px; /* Padding for better button feel */
+    border: 2px solid transparent; /* Default border */
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s, color 0.3s; /* Smooth transitions */
+}
+
+nav a:hover {
+    color: white; /* Change text color on hover for better contrast */
+    background-color: #ff6b6b; /* Background color change on hover */
+    border-color: #ff6b6b; /* Border color change on hover */
+}
+
+.main {
+    flex: 1; /* Allow the main section to take up available space */
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.game-container {
+    background-color: #ffffff; /* White background for game container */
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#countDisplay {
+    font-size: 48px; /* Large font for number display */
+    color: #444; /* Dark text for visibility */
+    margin: 20px 0;
+}
+
+button {
+    padding: 10px 20px;
+    margin: 10px;
+    background-color: #ff6b6b; /* Soft red for buttons */
+    color: white; /* White text */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 24px; /* Bigger font for easier reading */
+}
+
+button:hover {
+    background-color: #ff4d4d; /* Darker red on hover */
+}
+
+#message {
+    margin-top: 15px;
+    font-size: 20px;
+    color: #ff0000; /* Red for error messages */
+}
+
+footer {
+    background-color: #ffffff; /* White background for footer */
+    color: #444; /* Dark text for visibility */
+    text-align: center;
+    padding: 20px;
+    margin-top: auto; /* Push footer to the bottom */
+}
